@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · Markdown Viewer for Safari</title>
+  <meta name="description" content="Help with turning on and using Markdown Viewer for Safari.">
+  <link rel="icon" href="img/icon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/icon.png" alt="">Markdown Viewer</a>
+    <nav class="site-nav" aria-label="Main">
+      <a class="hide-sm" href="./#features">Features</a>
+      <a class="hide-sm" href="./#pricing">Pricing</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main class="page">
+  <h1>Support</h1>
+  <p class="lead">Help with turning on and using Markdown Viewer for Safari.</p>
+
+  <h2>Turn it on</h2>
+  <ol>
+    <li>Open the Markdown Viewer app once.</li>
+    <li>In Safari, open <strong>Settings</strong>, then <strong>Extensions</strong>, and tick <strong>Markdown Viewer</strong>.</li>
+    <li>Click <strong>Edit Websites</strong> and set Markdown Viewer to <strong>Allow</strong> on every website.</li>
+  </ol>
+  <p>Then open a Markdown file to try it, for example <a href="https://raw.githubusercontent.com/mermaid-js/mermaid/develop/README.md">Mermaid's README</a>.</p>
+
+  <h2>Using it</h2>
+  <ul>
+    <li><strong>Raw</strong> (top right) or <kbd>⌥</kbd><kbd>R</kbd> switches between formatted and original text.</li>
+    <li><strong>Contents</strong> opens the outline of headings.</li>
+    <li>Click a diagram to open it full screen. Pinch or <kbd>⌘</kbd>-scroll to zoom, drag to move, <kbd>Esc</kbd> to close.</li>
+    <li>Hover a code block and click the copy icon to copy it.</li>
+    <li>The Markdown Viewer button in the Safari toolbar turns rendering on or off.</li>
+  </ul>
+
+  <h2>Common questions</h2>
+  <p><strong>A .md page still shows raw text.</strong> Check that the extension is allowed on that website. Click the Markdown Viewer button in the Safari toolbar, or open Settings, Extensions, Edit Websites.</p>
+  <p><strong>Can I hide the toolbar button?</strong> Yes. In Safari, choose View, then Customize Toolbar, and drag the Markdown Viewer button off the toolbar. Markdown Viewer keeps working without it. Safari adds a button for every extension, so the extension can't remove it on its own.</p>
+  <p><strong>A GitHub page doesn't change.</strong> GitHub's own file view is already an HTML page. Click <strong>Raw</strong> on GitHub to open the Markdown file itself.</p>
+  <p><strong>Safari downloads the file instead of showing it.</strong> The server is sending the file as a download, and Safari does this before any extension can act. Ask the site owner to serve Markdown as <code>text/plain</code> or <code>text/markdown</code>.</p>
+  <p><strong>Local files (file://) don't render.</strong> Safari does not run extensions on local files. Serve the folder instead, for example with <code>python3 -m http.server</code>, and open <code>http://localhost:8000/your-file.md</code>. You get live reload that way too.</p>
+  <p><strong>A diagram shows an error.</strong> The Mermaid code in the file has a mistake. The message under the diagram names the line, and the source is shown below it.</p>
+
+  <h2>Contact</h2>
+  <p>Email <span data-email><a href="mailto:extensions.support@icloud.com">extensions.support@icloud.com</a></span>. Please include your macOS and Safari versions and, if you can, a link to the file that misbehaves.</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Elena Trifonova</span>
+    <nav aria-label="Footer"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>
